@@ -17,6 +17,7 @@ target/
 /gradlew.bat
 .todo
 *.properties
+ajcore.*.txt
 
 # Compiled class file
 *.class
