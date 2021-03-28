@@ -2,7 +2,6 @@ package tests.tricentis;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 
 import java.io.FileReader;
@@ -15,9 +14,9 @@ import static java.lang.System.setProperty;
 
 public class BaseTest {
 
-    @BeforeEach
+    @BeforeAll
     @DisplayName("Precondition step")
-    void setUp( ) {
+    static void setUp( ) {
         baseURI = "http://demowebshop.tricentis.com";
         filters(new AllureRestAssured( ));
         Properties properties = new Properties( );
