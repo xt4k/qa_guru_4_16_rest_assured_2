@@ -27,5 +27,4 @@ public class BaseTest {
         }
         properties.forEach((key, value) -> setProperty((String) key, (String) value));
     }
-
 }

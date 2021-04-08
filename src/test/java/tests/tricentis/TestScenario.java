@@ -8,7 +8,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class TestScenario extends BaseTest {
 
-
     @Step("Scenario for test `Search` button.")
     void searchScenario(String query, String returnText) {
         String body = given( )
