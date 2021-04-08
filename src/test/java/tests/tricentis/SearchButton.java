@@ -1,6 +1,9 @@
 package tests.tricentis;
 
-import io.qameta.allure.*;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utils.QueryConverter;
@@ -21,14 +24,14 @@ public class SearchButton extends BaseTest {
     void searchSuccess1Result( ) {
         query = qc.getQuery("query");
         answer = "Show details for Copy of Computing and Internet EX";
-        apiTest.searchScenario(query,answer);
+        apiTest.searchScenario(query, answer);
     }
 
     @Test
     @DisplayName("Test 02: Search not found any result matched defined criteria.")
     void searchNoResultTest( ) {
         query = qc.getQuery("query2");
-        answer =  "No products were found that matched your criteria.";
-        apiTest.searchScenario(query,answer);
+        answer = "No products were found that matched your criteria.";
+        apiTest.searchScenario(query, answer);
     }
 }
